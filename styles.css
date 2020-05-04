@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.header{
+  display: flex;
+  margin: 0 2px;
+  padding: 0;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f5ebe9;
+  border: 1px solid #000000; 
+  
+}
+body{
+  background: #f5ebe9;
+}
+.img {
+  display: flex;
+  width: 10%;
+  height: 20%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0px;
+  padding: 1.5%;
+  width: 100%;
+  font-size: 25px;
+  border: 3px #000000; 
+  
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+a {
+ text-decoration: underline;
+ font-style: italic;
+ color: #000000;
+ transition: all 0.3s ease 0s;
+}
+a:hover {
+  color: #786f56;
+}
+.inv{
+  top: -3%;
+  position:relative;  
+  text-align: center;
+  font-size: 27px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: overline underline;
+  background-color: #c7bea6;
+  width: 25%;
+  height: 7%;
+  margin-left: 37%;
+  border-radius: 3%;
+  font-style: normal;
+  
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px,1fr));
+  background-color: #f5ebe9;
+  max-width: 50%;
+  height: 100%;
+  margin-left: 25%;
+  object-fit: cover;
+}
+.gallery__img {
+  display: block;
+  width: 300px;
+  height: 285px;
+  object-fit: cover;
+}
+.gallery__img:hover {
+transform: scale(-1.25);
+}
+
